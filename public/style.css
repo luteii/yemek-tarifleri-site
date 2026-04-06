@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    
+    /* ARKA PLAN AYARLARI */
+    /* Not: url kısmındaki / işaretini kaldırarak 'food.jpg' yapıyoruz */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('food2.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    
+    /* MERKEZLEME AYARLARI */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Gölgeyi biraz belirginleştirdim */
+    width: 100%;
+    max-width: 360px;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #D90429;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #E0E0E0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #D90429;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #D90429;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #BF0424;
+}
+
+.login-footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.login-footer a {
+    color: #D90429;
+    text-decoration: none;
+    font-weight: 600;
+}

@@ -2,25 +2,33 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Giriş Yap - Yemek Tarifleri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - Tarif Dünyası</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <main>
-        <h2>Mutfağa Giriş Yap</h2>
+
+    <main class="login-container">
+        <h2>Mutfağa Giriş</h2>
+        
         <form action="/login" method="POST">
-            <div>
-                <label for="username">Kullanıcı Adı:</label>
-                <input type="text" id="username" name="username" required>
+            <div class="form-group">
+                <label for="username">Şefin Adı</label>
+                <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı girin" required>
             </div>
-            <br>
-            <div>
-                <label for="password">Şifre:</label>
-                <input type="password" id="password" name="password" required>
+            
+            <div class="form-group">
+                <label for="password">Gizli Tarif (Şifre)</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
             </div>
-            <br>
-            <button type="submit">Giriş Yap</button>
+            
+            <button type="submit" class="btn-login">Giriş Yap</button>
         </form>
-        <p>Hesabın yok mu? <a href="/register">Kayıt Ol</a></p>
+        
+        <div class="login-footer">
+            <p>Henüz mutfağımızda yok musun? <br> <a href="/register">Hemen Kayıt Ol</a></p>
+        </div>
     </main>
+
 </body>
 </html>
