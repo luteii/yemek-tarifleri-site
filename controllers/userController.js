@@ -13,3 +13,8 @@ exports.registerUser = (req, res) => {
     User.save({ username, password });
     res.send(`Kullanıcı ${username} başarıyla kaydedildi! data/users.json dosyasını kontrol edin.`);
 };
+
+
+exports.getLoginPage = (req, res) => {
+    res.sendFile(path.join(__dirname, '../views/login.html'));
+};
