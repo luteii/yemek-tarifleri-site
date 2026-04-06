@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - Tarif Dünyası</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
 <body>
-    <h2>Kayıt Ol</h2>
-    <form action="/register" method="POST">
-        <input type="text" name="username" placeholder="Kullanıcı Adı" required><br><br>
-        <input type="password" name="password" placeholder="Şifre" required><br><br>
-        <button type="submit">Kayıt Ol</button>
-    </form>
+
+    <main class="login-container">
+        <h2>Mutfak Ekibine Katıl</h2>
+        
+        <form action="/register" method="POST">
+            
+            <div class="form-group">
+                <label for="username">Şefin Adı</label>
+                <input type="text" id="username" name="username" placeholder="Kullanıcı adınızı belirleyin" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Gizli Tarif (Şifre)</label>
+                <input type="password" id="password" name="password" placeholder="Şifrenizi belirleyin" required>
+            </div>
+            
+            <button type="submit" class="btn-login">Kayıt Ol</button>
+        </form>
+        
+        <div class="login-footer">
+            <p>Zaten mutfağımızda mısın?</p>
+            <a href="/login" class="register-link">Hemen Giriş Yap</a>
+        </div>
+    </main>
+
 </body>
 </html>
