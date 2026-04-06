@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Yap - Yemek Tarifleri</title>
+</head>
+<body>
+    <main>
+        <h2>Mutfağa Giriş Yap</h2>
+        <form action="/login" method="POST">
+            <div>
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+            <div>
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <p>Hesabın yok mu? <a href="/register">Kayıt Ol</a></p>
+    </main>
+</body>
+</html>
